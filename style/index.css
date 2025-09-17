@@ -18,6 +18,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
 .logo {
   display: flex;
   align-items: center;
@@ -72,11 +73,13 @@ body {
 }
 .volume {
   border: 1px solid white;
-  border-radius: 50%;
-  padding: 10px;
+  border-radius: 60px;
+  padding: 6px;
+  display: flex;
+  align-items: center;
 }
 .volume img {
-  width: 25px;
+  width: 20px;
 }
 .hero-content {
   max-width: 500px;
@@ -116,6 +119,7 @@ body {
 .btn-primary {
   background-color: #0011cd;
   color: white;
+  border-radius: 40px;
 }
 
 .btn-secondary {
@@ -123,6 +127,7 @@ body {
   color: white;
   border: 2px solid #666;
   background-color: #444;
+  border-radius: 40px;
 }
 
 .btn:hover {
@@ -150,7 +155,22 @@ body {
   padding-bottom: 10px;
   justify-content: space-between;
 }
+.movie-grid-next {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  justify-content: space-between;
+}
 
+.movie-card-next {
+  min-width: 320px;
+  height: 200px;
+  background-color: #444;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+}
 .movie-card {
   min-width: 250px;
   height: 320px;
@@ -246,8 +266,18 @@ body {
 .movie-grid::-webkit-scrollbar-track {
   background: #333;
 }
+.movie-grid-next::-webkit-scrollbar-track {
+  background: #333;
+}
+.movie-grid-next::-webkit-scrollbar {
+  height: 6px;
+}
 
 .movie-grid::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 3px;
+}
+.movie-grid-next::-webkit-scrollbar-thumb {
   background: #666;
   border-radius: 3px;
 }
@@ -259,16 +289,25 @@ body {
     padding: 0;
   }
   .logo img {
-    margin: 0 5px 0 0;
-    width: 80px;
+    margin: 0 15px 0 0;
+    content: url(/img/logoChil\ -\ Copy.png);
+    max-width: 25px;
+  }
+  .movie-card {
+    min-width: 150px;
+    height: 220px;
+    background-color: #444;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
   }
 
   .hero {
-    padding: 50px;
+    padding: 20px;
   }
   .nav {
     display: flex;
-    gap: 30px;
+    gap: 20px;
   }
   .btn-primary {
     font-size: small;
@@ -276,6 +315,10 @@ body {
   }
   .btn-secondary {
     font-size: small;
+    width: 120px;
+    padding: 10px;
+  }
+  .content {
     padding: 10px;
   }
   .nav a {
@@ -299,7 +342,7 @@ body {
 
   .footer-section {
     margin-top: 15px;
-    padding: 10px 0;
+    width: 100%;
   }
 
   .footer-toggle {
@@ -328,5 +371,8 @@ body {
 
   .footer-section.active .footer-list {
     max-height: 300px;
+  }
+  .volume {
+    margin: 4px;
   }
 }

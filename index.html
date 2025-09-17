@@ -46,8 +46,8 @@
       <!-- Melanjutkan Tontonan Film -->
       <div class="section">
         <h2>Melanjutkan Tontonan Film</h2>
-        <div class="movie-grid">
-          <div class="movie-card">
+        <div class="movie-grid-next">
+          <div class="movie-card-next">
             <div
               style="
                 background-image: url(img/movie/Screenshot\ 2025-09-17\ 142946.png);
@@ -60,11 +60,9 @@
                 align-items: center;
                 justify-content: center;
               "
-            >
-              <span>Film 1</span>
-            </div>
+            ></div>
           </div>
-          <div class="movie-card">
+          <div class="movie-card-next">
             <div
               style="
                 background-image: url(img/movie/Screenshot\ 2025-09-17\ 143012.png);
@@ -79,7 +77,7 @@
               "
             ></div>
           </div>
-          <div class="movie-card">
+          <div class="movie-card-next">
             <div
               style="
                 background-image: url(img/movie/Screenshot\ 2025-09-17\ 143035.png);
@@ -94,7 +92,7 @@
               "
             ></div>
           </div>
-          <div class="movie-card">
+          <div class="movie-card-next">
             <div
               style="
                 background-image: url(img/movie/Screenshot\ 2025-09-17\ 143100.png);
@@ -109,7 +107,7 @@
               "
             ></div>
           </div>
-          <div class="movie-card">
+          <div class="movie-card-next">
             <div
               style="
                 background-image: url(img/movie/Screenshot\ 2025-09-17\ 143135.png);
@@ -389,7 +387,7 @@
             <li><a href="#">Aksi</a></li>
             <li><a href="#">Anak-anak</a></li>
             <li><a href="#">Anime</a></li>
-            <li><a href="#">Britania</a></li>
+            <li><a href="#">Horror</a></li>
           </ul>
         </div>
 
@@ -414,20 +412,8 @@
     </div>
 
     <script>
-      //card movie
-      const movies = [
-        {
-          title: "Avengers",
-          img: "img/movie/Screenshot 2025-09-17 142946.png",
-        },
-        { title: "Inception", img: "img/movies/inception.jpg" },
-        { title: "Interstellar", img: "img/movies/interstellar.jpg" },
-        { title: "Joker", img: "img/movies/joker.jpg" },
-      ];
-      const movie = document.getElementById(".movie");
-      console.log(movie);
       // Simple hover effects for movie cards
-      const movieCards = document.querySelector(".movie-card");
+      const movieCards = document.querySelectorAll(".movie-card");
 
       movieCards.forEach((card) => {
         card.addEventListener("mouseenter", function () {
