@@ -4,31 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chill Streaming</title>
+    <link rel="icon" href="img/logoChil.png" />
     <link rel="stylesheet" href="style/index.css" />
   </head>
   <body>
     <!-- Header -->
-    <div class="header">
+    <header class="header">
       <div class="logo">
-        <img src="img/logoChil.png" alt="" />
-        <div class="nav">
+        <img src="img/logoChil.png" alt="Logo Chill" />
+        <nav class="nav">
           <a href="#">Series</a>
           <a href="#">Film</a>
           <a href="#">Daftar Saya</a>
-        </div>
+        </nav>
       </div>
       <div class="profile">
-        <div class="profile-pic"></div>
+        <div class="profile-pic" role="img" aria-label="Profile picture"></div>
         <span>▼</span>
       </div>
-    </div>
+    </header>
 
     <!-- Hero Section -->
-    <div class="hero">
+    <section class="hero">
       <div class="hero-content">
         <h1>Duty After School</h1>
         <p>
-          Sebuah benda tak dikenal mengambil alih langit dan kehidupan menusia
+          Sebuah benda tak dikenal mengambil alih langit dan kehidupan manusia
           di Bumi berubah. Tentara bergantung pada para siswa untuk melawan
           benda misterius.
         </p>
@@ -38,346 +39,127 @@
           <span>18+</span>
         </div>
       </div>
-      <div class="volume"><img src="img/volume.png" alt="" /></div>
-    </div>
+      <div class="volume">
+        <img src="img/volume.png" alt="Volume control" />
+      </div>
+    </section>
 
-    <!-- Content -->
-    <div class="content">
-      <!-- Melanjutkan Tontonan Film -->
-      <div class="section">
+    <!-- Main Content -->
+    <main class="content">
+      <!-- Melanjutkan Tontonan -->
+      <section class="section">
         <h2>Melanjutkan Tontonan Film</h2>
         <div class="movie-grid-next">
-          <div class="movie-card-next">
-            <div
-              style="
-                background-image: url(img/movie/Screenshot\ 2025-09-17\ 142946.png);
-                width: 100%;
-                height: 100%;
-                border-radius: 8px;
-                background-size: cover;
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            ></div>
-          </div>
-          <div class="movie-card-next">
-            <div
-              style="
-                background-image: url(img/movie/Screenshot\ 2025-09-17\ 143012.png);
-                width: 100%;
-                height: 100%;
-                border-radius: 8px;
-                background-size: cover;
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            ></div>
-          </div>
-          <div class="movie-card-next">
-            <div
-              style="
-                background-image: url(img/movie/Screenshot\ 2025-09-17\ 143035.png);
-                width: 100%;
-                height: 100%;
-                border-radius: 8px;
-                background-size: cover;
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            ></div>
-          </div>
-          <div class="movie-card-next">
-            <div
-              style="
-                background-image: url(img/movie/Screenshot\ 2025-09-17\ 143100.png);
-                width: 100%;
-                height: 100%;
-                border-radius: 8px;
-                background-size: cover;
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            ></div>
-          </div>
-          <div class="movie-card-next">
-            <div
-              style="
-                background-image: url(img/movie/Screenshot\ 2025-09-17\ 143135.png);
-                width: 100%;
-                height: 100%;
-                background-size: cover;
-
-                border-radius: 8px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            ></div>
-          </div>
+          <div
+            class="movie-card-next bg-movie"
+            data-bg="img/movie/Screenshot 2025-09-17 142946.png"
+          ></div>
+          <div
+            class="movie-card-next bg-movie"
+            data-bg="img/movie/Screenshot 2025-09-17 143012.png"
+          ></div>
+          <div
+            class="movie-card-next bg-movie"
+            data-bg="img/movie/Screenshot 2025-09-17 143035.png"
+          ></div>
+          <div
+            class="movie-card-next bg-movie"
+            data-bg="img/movie/Screenshot 2025-09-17 143100.png"
+          ></div>
+          <div
+            class="movie-card-next bg-movie"
+            data-bg="img/movie/Screenshot 2025-09-17 143135.png"
+          ></div>
         </div>
-      </div>
+      </section>
 
-      <!-- Top Rating Film dan Series Hari ini -->
-      <div class="section">
+      <!-- Top Rating -->
+      <section class="section">
         <h2>Top Rating Film dan Series Hari ini</h2>
         <div class="movie-grid">
-          <div class="movie-card">
-            <div
-              style="
-                background-image: url(img/movie/Screenshot\ 2025-09-17\ 143201.png);
-                width: 100%;
-                height: 100%;
-                border-radius: 8px;
-                background-size: cover;
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            ></div>
-          </div>
-          <div class="movie-card">
-            <div
-              style="
-                background-image: url(img/movie/Screenshot\ 2025-09-17\ 143243.png);
-                width: 100%;
-                height: 100%;
-                border-radius: 8px;
-                display: flex;
-                background-size: cover;
-
-                align-items: center;
-                justify-content: center;
-              "
-            ></div>
-          </div>
-          <div class="movie-card">
-            <div
-              style="
-                background-image: url(img/movie/Screenshot\ 2025-09-17\ 143303.png);
-                width: 100%;
-                height: 100%;
-                border-radius: 8px;
-                display: flex;
-                align-items: center;
-                background-size: cover;
-
-                justify-content: center;
-              "
-            ></div>
-          </div>
-          <div class="movie-card">
-            <div
-              style="
-                background-image: url(img/movie/Screenshot\ 2025-09-17\ 143324.png);
-
-                width: 100%;
-                height: 100%;
-                border-radius: 8px;
-                display: flex;
-                background-size: cover;
-
-                align-items: center;
-                justify-content: center;
-              "
-            ></div>
-          </div>
-          <div class="movie-card">
-            <div
-              style="
-                background-image: url(img/movie/Screenshot\ 2025-09-17\ 143340.png);
-                width: 100%;
-                height: 100%;
-                border-radius: 8px;
-                background-size: cover;
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            ></div>
-          </div>
+          <div
+            class="movie-card bg-movie"
+            data-bg="img/movie/Screenshot 2025-09-17 143201.png"
+          ></div>
+          <div
+            class="movie-card bg-movie"
+            data-bg="img/movie/Screenshot 2025-09-17 143243.png"
+          ></div>
+          <div
+            class="movie-card bg-movie"
+            data-bg="img/movie/Screenshot 2025-09-17 143303.png"
+          ></div>
+          <div
+            class="movie-card bg-movie"
+            data-bg="img/movie/Screenshot 2025-09-17 143324.png"
+          ></div>
+          <div
+            class="movie-card bg-movie"
+            data-bg="img/movie/Screenshot 2025-09-17 143340.png"
+          ></div>
         </div>
-      </div>
+      </section>
 
       <!-- Film Trending -->
-      <div class="section">
+      <section class="section">
         <h2>Film Trending</h2>
         <div class="movie-grid">
-          <div class="movie-card">
-            <div
-              style="
-                background-image: url(img/movie/Screenshot\ 2025-09-17\ 143421.png);
-                width: 100%;
-                height: 100%;
-                border-radius: 8px;
-                display: flex;
-                align-items: center;
-                background-size: cover;
-
-                justify-content: center;
-              "
-            ></div>
-          </div>
-          <div class="movie-card">
-            <div
-              style="
-                background-image: url(img/movie/Screenshot\ 2025-09-17\ 143201.png);
-                width: 100%;
-                height: 100%;
-                border-radius: 8px;
-                background-size: cover;
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            ></div>
-          </div>
-          <div class="movie-card">
-            <div
-              style="
-                background-image: url(img/movie/Screenshot\ 2025-09-17\ 143324.png);
-                width: 100%;
-                height: 100%;
-                border-radius: 8px;
-                background-size: cover;
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            ></div>
-          </div>
-          <div class="movie-card">
-            <div
-              style="
-                background-image: url(img/movie/Screenshot\ 2025-09-17\ 143100.png);
-                width: 100%;
-                height: 100%;
-                border-radius: 8px;
-                background-size: cover;
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            ></div>
-          </div>
-          <div class="movie-card">
-            <div
-              style="
-                background-image: url(img/movie/Screenshot\ 2025-09-17\ 143444.png);
-                width: 100%;
-                height: 100%;
-                background-size: cover;
-
-                border-radius: 8px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            ></div>
-          </div>
+          <div
+            class="movie-card bg-movie"
+            data-bg="img/movie/Screenshot 2025-09-17 143421.png"
+          ></div>
+          <div
+            class="movie-card bg-movie"
+            data-bg="img/movie/Screenshot 2025-09-17 143201.png"
+          ></div>
+          <div
+            class="movie-card bg-movie"
+            data-bg="img/movie/Screenshot 2025-09-17 143324.png"
+          ></div>
+          <div
+            class="movie-card bg-movie"
+            data-bg="img/movie/Screenshot 2025-09-17 143100.png"
+          ></div>
+          <div
+            class="movie-card bg-movie"
+            data-bg="img/movie/Screenshot 2025-09-17 143444.png"
+          ></div>
         </div>
-      </div>
+      </section>
 
       <!-- Rilis Baru -->
-      <div class="section">
+      <section class="section">
         <h2>Rilis Baru</h2>
         <div class="movie-grid">
-          <div class="movie-card">
-            <div
-              class="movie"
-              style="
-                background-image: url(img/movie/Screenshot\ 2025-09-17\ 143421.png);
-                width: 100%;
-                height: 100%;
-                border-radius: 8px;
-                background-size: cover;
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            ></div>
-          </div>
-          <div class="movie-card">
-            <div
-              style="
-                background-image: url(img/movie/Screenshot\ 2025-09-17\ 143303.png);
-                width: 100%;
-                height: 100%;
-                border-radius: 8px;
-                display: flex;
-                background-size: cover;
-
-                align-items: center;
-                justify-content: center;
-              "
-            ></div>
-          </div>
-          <div class="movie-card">
-            <div
-              style="
-                background-image: url(img/movie/Screenshot\ 2025-09-17\ 143035.png);
-                width: 100%;
-                height: 100%;
-                border-radius: 8px;
-                background-size: cover;
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            ></div>
-          </div>
-          <div class="movie-card">
-            <div
-              style="
-                background-image: url(img/movie/Screenshot\ 2025-09-17\ 143135.png);
-                width: 100%;
-                height: 100%;
-                border-radius: 8px;
-                background-size: cover;
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            ></div>
-          </div>
-          <div class="movie-card">
-            <div
-              style="
-                background-image: url(img/movie/Screenshot\ 2025-09-17\ 142946.png);
-                width: 100%;
-                height: 100%;
-                background-size: cover;
-                border-radius: 8px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            ></div>
-          </div>
+          <div
+            class="movie-card bg-movie"
+            data-bg="img/movie/Screenshot 2025-09-17 143421.png"
+          ></div>
+          <div
+            class="movie-card bg-movie"
+            data-bg="img/movie/Screenshot 2025-09-17 143303.png"
+          ></div>
+          <div
+            class="movie-card bg-movie"
+            data-bg="img/movie/Screenshot 2025-09-17 143035.png"
+          ></div>
+          <div
+            class="movie-card bg-movie"
+            data-bg="img/movie/Screenshot 2025-09-17 143135.png"
+          ></div>
+          <div
+            class="movie-card bg-movie"
+            data-bg="img/movie/Screenshot 2025-09-17 142946.png"
+          ></div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
 
     <!-- Footer -->
-    <div class="footer">
+    <footer class="footer">
       <div class="footer-content">
-        <div class="footer-img">
-          <img src="img/logoChil.png" alt="" />
+        <div>
+          <img src="img/logoChil.png" alt="Logo Chill" />
           <p>©2023 Chill All Rights Reserved.</p>
         </div>
 
@@ -409,36 +191,27 @@
           </ul>
         </div>
       </div>
-    </div>
+    </footer>
 
     <script>
-      // Simple hover effects for movie cards
-      const movieCards = document.querySelectorAll(".movie-card");
-
-      movieCards.forEach((card) => {
-        card.addEventListener("mouseenter", function () {
-          this.style.transform = "scale(1.05)";
-          this.style.transition = "transform 0.3s";
-        });
-
-        card.addEventListener("mouseleave", function () {
-          this.style.transform = "scale(1)";
-        });
+      // Set background-image dari data-bg
+      document.querySelectorAll(".bg-movie").forEach((el) => {
+        const bg = el.getAttribute("data-bg");
+        el.style.backgroundImage = `url('${bg}')`;
       });
 
-      // Simple click handler for buttons
-      const buttons = document.querySelectorAll(".btn");
-      buttons.forEach((btn) => {
-        btn.addEventListener("click", function () {
-          alert("Fitur ini belum tersedia!");
-        });
-      });
+      // Footer toggle accordion
       const toggles = document.querySelectorAll(".footer-toggle");
-
       toggles.forEach((toggle) => {
         toggle.addEventListener("click", () => {
-          const section = toggle.parentElement;
-          section.classList.toggle("active");
+          toggle.parentElement.classList.toggle("active");
+        });
+      });
+
+      // Dummy button alert
+      document.querySelectorAll(".btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          alert("Fitur ini belum tersedia!");
         });
       });
     </script>

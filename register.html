@@ -6,57 +6,61 @@
     <title>Chill-register</title>
     <link rel="stylesheet" href="style/register.css" />
   </head>
+
   <body>
-    <body>
-      <div class="container">
-        <div class="logo"><img src="img/logoChil.png" alt="" /></div>
+    <main class="container">
+      <header class="logo">
+        <img src="img/logoChil.png" alt="Logo Chill" />
+      </header>
 
-        <div class="welcome">
-          <h2>Masuk</h2>
-          <p>Selamat datang kembali!</p>
+      <section class="welcome">
+        <h2>Masuk</h2>
+        <p>Selamat datang kembali!</p>
+      </section>
+
+      <form>
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Masukkan username" />
         </div>
 
         <div class="form-group">
-          <label>Username</label>
-          <input type="text" placeholder="Masukkan username" />
-        </div>
-
-        <div class="form-group">
-          <label>Kata Sandi</label>
+          <label for="password">Kata Sandi</label>
           <div class="password-box">
             <input
               type="password"
               id="password"
-              placeholder="Masukkan kata sandi"
+              placeholder="Masukkan Kata Sandi"
             />
-
-            <img src="img/eye.png" alt="" class="eye-button" />
+            <img src="img/eye.png" alt="Toggle Password" class="eye-button" />
           </div>
-          <label class="konfirmasi-sandi">konfirmasi Kata Sandi</label>
+
+          <label for="confirm-password" class="konfirmasi-sandi"
+            >Konfirmasi Kata Sandi</label
+          >
           <div class="password-box">
             <input
               type="password"
-              id="password"
-              placeholder="Masukkan kata sandi"
+              id="confirm-password"
+              placeholder="Masukkan Kata Sandi"
             />
-
-            <img src="img/eye.png" alt="" class="eye-button" />
+            <img src="img/eye.png" alt="Toggle Password" class="eye-button" />
           </div>
         </div>
 
         <div class="links">
-          <span>Sudah punya akun? <a href="#">Masuk</a></span>
+          <span>Sudah punya akun? <a href="login.html">Masuk</a></span>
         </div>
 
-        <button class="login-button">Masuk</button>
+        <button type="submit" class="login-button">Masuk</button>
+      </form>
 
-        <div class="or">Atau</div>
+      <div class="or">Atau</div>
 
-        <button class="google-button">
-          <img src="img/google.webp" alt="" style="width: 18px" />Masuk dengan
-          Google
-        </button>
-      </div>
-    </body>
+      <button class="google-button">
+        <img src="img/google.webp" alt="Google Logo" style="width: 18px" />
+        Masuk dengan Google
+      </button>
+    </main>
   </body>
 </html>

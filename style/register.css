@@ -136,15 +136,15 @@ body {
   color: white;
   font-family: Arial, sans-serif;
   margin: 0;
-  min-height: 100vh; /* isi layar penuh */
-  display: flex; /* untuk center */
+  min-height: 100vh;
+  display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0; /* jangan pakai padding besar */
+  padding: 0;
 }
 
 .container {
-  background-color: rgba(39, 39, 39, 0.9); /* transparan sedikit */
+  background-color: rgba(39, 39, 39, 0.9);
   width: 350px;
 
   padding: 30px;
@@ -174,7 +174,7 @@ body {
 }
 
 .form-group {
-  margin: 20px;
+  margin: 15px 0;
 }
 .konfirmasi-sandi {
   margin-top: 15px;
@@ -271,23 +271,6 @@ input::placeholder {
 .google-button:hover {
   background-color: #666;
 }
-/* Responsive untuk tablet */
-@media (max-width: 768px) {
-  .container {
-    width: 80%;
-    padding: 20px;
-  }
-
-  .welcome h2 {
-    font-size: 20px;
-  }
-
-  .login-button,
-  .google-button {
-    padding: 12px;
-    font-size: 15px;
-  }
-}
 
 /* Responsive untuk smartphone */
 @media (max-width: 480px) {
@@ -321,18 +304,22 @@ input::placeholder {
     padding: 10px;
     font-size: 14px;
   }
+  .form-group {
+    margin: 20px;
+  }
 
   .google-button {
     padding: 10px;
     align-items: center;
-    font-size: 10px;
+    font-size: 15px;
     border-radius: 15px;
     max-width: 250px;
     margin: auto;
   }
   .login-button {
     max-width: 250px;
-    margin: 0 21px;
+    margin-left: 25px;
+    padding: 10px;
     border-radius: 15px;
   }
 
@@ -341,5 +328,9 @@ input::placeholder {
     align-items: center;
     gap: 8px;
     text-align: center;
+  }
+
+  .eye-button {
+    top: 9px;
   }
 }
